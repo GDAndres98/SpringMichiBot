@@ -1,1 +1,2 @@
 token: '${BOT_TOKEN}'
+server.port: '${PORT}'
