@@ -1,4 +1,4 @@
-package discord.michibot.config;
+package com.michigang.michibot.config;
 
 import discord4j.core.DiscordClientBuilder;
 import discord4j.core.GatewayDiscordClient;

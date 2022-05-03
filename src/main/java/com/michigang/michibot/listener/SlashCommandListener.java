@@ -1,6 +1,6 @@
-package discord.michibot.listener;
+package com.michigang.michibot.listener;
 
-import discord.michibot.commands.SlashCommand;
+import com.michigang.michibot.commands.SlashCommand;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import org.springframework.stereotype.Component;

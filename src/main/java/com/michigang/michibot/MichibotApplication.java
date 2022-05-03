@@ -1,4 +1,4 @@
-package discord.michibot;
+package com.michigang.michibot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package discord.michibot.commands;
+package com.michigang.michibot.commands;
 
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import discord4j.core.object.command.ApplicationCommandInteractionOption;
