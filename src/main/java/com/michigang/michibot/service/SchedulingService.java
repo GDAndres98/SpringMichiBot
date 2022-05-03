@@ -22,9 +22,10 @@ public class SchedulingService {
     private void pingSelf() {
         try {
             boolean dateParityEven = (System.currentTimeMillis() / 60000) % 2 == 0;
-            LOGGER.info("El michi respira: " + String.valueOf(dateParityEven));
+            String varDingDong = dateParityEven ? "Ding" : "Dong";
+            LOGGER.info("El michi respira: " + varDingDong);
             gatewayDiscordClient.updatePresence(
-                    ClientPresence.online(ClientActivity.listening(dateParityEven ? "Ding" : "Dong"))).block();
+                    ClientPresence.online(ClientActivity.listening(varDingDong))).block();
         } catch (Exception e) {
             LOGGER.error("EL MICHI NO RESPIRA!");
         }
