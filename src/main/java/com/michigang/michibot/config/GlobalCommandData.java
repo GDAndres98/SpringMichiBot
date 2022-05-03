@@ -22,11 +22,8 @@ import java.util.List;
 public class GlobalCommandData implements ApplicationRunner {
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
-    private final RestClient client;
-
-    public GlobalCommandData(RestClient client) {
-        this.client = client;
-    }
+    @Autowired
+    private RestClient client;
 
     @Override
     public void run(ApplicationArguments args) throws IOException {
