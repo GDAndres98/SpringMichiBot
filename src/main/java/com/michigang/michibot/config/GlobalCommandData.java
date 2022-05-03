@@ -1,4 +1,4 @@
-package discord.michibot.config;
+package com.michigang.michibot.config;
 
 
 import discord4j.common.JacksonResources;
@@ -7,6 +7,7 @@ import discord4j.rest.RestClient;
 import discord4j.rest.service.ApplicationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.io.Resource;
@@ -21,11 +22,8 @@ import java.util.List;
 public class GlobalCommandData implements ApplicationRunner {
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
-    private final RestClient client;
-
-    public GlobalCommandData(RestClient client) {
-        this.client = client;
-    }
+    @Autowired
+    private RestClient client;
 
     @Override
     public void run(ApplicationArguments args) throws IOException {
