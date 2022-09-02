@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BotConfiguration {
 
-    @Value("${token}")
+    @Value("${bot.token}")
     private String token;
 
     @Bean
