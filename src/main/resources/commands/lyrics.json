@@ -1,0 +1,18 @@
+{
+  "name": "lyrics",
+  "description": "Letra de alguna canción",
+  "options": [
+    {
+      "name": "cancion",
+      "description": "Nombre de la canción",
+      "type": 3,
+      "required": true
+    },
+    {
+      "name": "artista",
+      "description": "Nombre del artista",
+      "type": 3,
+      "required": false
+    }
+  ]
+}
